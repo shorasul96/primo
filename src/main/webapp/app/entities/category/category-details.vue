@@ -23,7 +23,7 @@
           </dt>
           <dd>
             <div v-if="category.parent">
-              <router-link :to="{ name: 'CategoryView', params: { categoryId: category.parent.id } }">{{ category.parent.id }}</router-link>
+              <router-link :to="{ name: 'CategoryView', params: { categoryId: category.parent.id } }">{{ category.parent.name }}</router-link>
             </div>
           </dd>
         </dl>
@@ -32,7 +32,7 @@
         </button>
         <router-link v-if="category.id" :to="{ name: 'CategoryEdit', params: { categoryId: category.id } }" custom v-slot="{ navigate }">
           <button @click="navigate" class="btn btn-primary">
-            <font-awesome-icon icon="pencil-alt"></font-awesome-icon>&nbsp;<span v-text="t$('entity.action.edit')"></span>
+            <font-awesome-icon icon="pencil-alt"></font-awesome-icon>&nbsp;<span></span>
           </button>
         </router-link>
       </div>

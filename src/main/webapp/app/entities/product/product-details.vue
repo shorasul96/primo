@@ -24,7 +24,7 @@
           <dd>
             <div v-if="product.stage">
               <router-link :to="{ name: 'ManufactureStageView', params: { manufactureStageId: product.stage.id } }">{{
-                product.stage.id
+                product.stage.name
               }}</router-link>
             </div>
           </dd>
@@ -34,7 +34,7 @@
           <dd>
             <div v-if="product.category">
               <router-link :to="{ name: 'CategoryView', params: { categoryId: product.category.id } }">{{
-                product.category.id
+                product.category.name
               }}</router-link>
             </div>
           </dd>
@@ -44,7 +44,7 @@
         </button>
         <router-link v-if="product.id" :to="{ name: 'ProductEdit', params: { productId: product.id } }" custom v-slot="{ navigate }">
           <button @click="navigate" class="btn btn-primary">
-            <font-awesome-icon icon="pencil-alt"></font-awesome-icon>&nbsp;<span v-text="t$('entity.action.edit')"></span>
+            <font-awesome-icon icon="pencil-alt"></font-awesome-icon>&nbsp;<span></span>
           </button>
         </router-link>
       </div>

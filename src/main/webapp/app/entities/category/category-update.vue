@@ -43,9 +43,10 @@
               <option
                 v-bind:value="category.parent && categoryOption.id === category.parent.id ? category.parent : categoryOption"
                 v-for="categoryOption in categories"
+                :disabled="categoryOption.id === category.id"
                 :key="categoryOption.id"
               >
-                {{ categoryOption.id }}
+                {{ categoryOption.name }}
               </option>
             </select>
           </div>

@@ -61,7 +61,7 @@
                 >
                   <button @click="navigate" class="btn btn-info btn-sm details" data-cy="entityDetailsButton">
                     <font-awesome-icon icon="eye"></font-awesome-icon>
-                    <span class="d-none d-md-inline" v-text="t$('entity.action.view')"></span>
+                    <span class="d-none d-md-inline" ></span>
                   </button>
                 </router-link>
                 <router-link
@@ -71,7 +71,7 @@
                 >
                   <button @click="navigate" class="btn btn-primary btn-sm edit" data-cy="entityEditButton">
                     <font-awesome-icon icon="pencil-alt"></font-awesome-icon>
-                    <span class="d-none d-md-inline" v-text="t$('entity.action.edit')"></span>
+                    <span class="d-none d-md-inline"></span>
                   </button>
                 </router-link>
                 <b-button
@@ -82,7 +82,7 @@
                   v-b-modal.removeEntity
                 >
                   <font-awesome-icon icon="times"></font-awesome-icon>
-                  <span class="d-none d-md-inline" v-text="t$('entity.action.delete')"></span>
+                  <span class="d-none d-md-inline"></span>
                 </b-button>
               </div>
             </td>
@@ -109,7 +109,7 @@
             class="btn btn-primary"
             id="primo-confirm-delete-manufactureStage"
             data-cy="entityConfirmDeleteButton"
-            v-text="t$('entity.action.delete')"
+
             v-on:click="removeManufactureStage()"
           ></button>
         </div>

@@ -57,7 +57,7 @@
             <td>
               <div v-if="category.parent">
                 <router-link :to="{ name: 'CategoryView', params: { categoryId: category.parent.id } }">{{
-                  category.parent.id
+                  category.parent.name
                 }}</router-link>
               </div>
             </td>
@@ -66,13 +66,13 @@
                 <router-link :to="{ name: 'CategoryView', params: { categoryId: category.id } }" custom v-slot="{ navigate }">
                   <button @click="navigate" class="btn btn-info btn-sm details" data-cy="entityDetailsButton">
                     <font-awesome-icon icon="eye"></font-awesome-icon>
-                    <span class="d-none d-md-inline" v-text="t$('entity.action.view')"></span>
+                    <span class="d-none d-md-inline" ></span>
                   </button>
                 </router-link>
                 <router-link :to="{ name: 'CategoryEdit', params: { categoryId: category.id } }" custom v-slot="{ navigate }">
                   <button @click="navigate" class="btn btn-primary btn-sm edit" data-cy="entityEditButton">
                     <font-awesome-icon icon="pencil-alt"></font-awesome-icon>
-                    <span class="d-none d-md-inline" v-text="t$('entity.action.edit')"></span>
+                    <span class="d-none d-md-inline"></span>
                   </button>
                 </router-link>
                 <b-button
@@ -83,7 +83,7 @@
                   v-b-modal.removeEntity
                 >
                   <font-awesome-icon icon="times"></font-awesome-icon>
-                  <span class="d-none d-md-inline" v-text="t$('entity.action.delete')"></span>
+                  <span class="d-none d-md-inline"></span>
                 </b-button>
               </div>
             </td>
@@ -106,7 +106,7 @@
             class="btn btn-primary"
             id="primo-confirm-delete-category"
             data-cy="entityConfirmDeleteButton"
-            v-text="t$('entity.action.delete')"
+
             v-on:click="removeCategory()"
           ></button>
         </div>

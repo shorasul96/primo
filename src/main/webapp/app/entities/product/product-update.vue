@@ -45,7 +45,7 @@
                 v-for="manufactureStageOption in manufactureStages"
                 :key="manufactureStageOption.id"
               >
-                {{ manufactureStageOption.id }}
+                {{ manufactureStageOption.name }}
               </option>
             </select>
           </div>
@@ -58,7 +58,7 @@
                 v-for="categoryOption in categories"
                 :key="categoryOption.id"
               >
-                {{ categoryOption.id }}
+                {{ categoryOption.name }}
               </option>
             </select>
           </div>
