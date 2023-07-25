@@ -1,0 +1,132 @@
+application {
+  config {
+    applicationType monolith
+    baseName store
+    packageName com.versatile
+    authenticationType jwt
+    databaseType sql
+    serverPort 8080
+    prodDatabaseType postgresql
+    devDatabaseType postgresql
+    buildTool maven
+    clientFramework vue
+    clientPackageManager npm
+    enableTranslation true
+    nativeLanguage en
+    jhiPrefix primo
+    dtoSuffix DTO
+    languages [en, ru]
+  }
+  entities *
+}
+
+
+entity Marketing {
+  deal DealType
+}
+
+enum DealType {
+  SALE,
+  TRADE,
+  IMPORT,
+  EXPORT,
+  PREPAY
+}
+
+entity ManufactureStage {
+  name String
+  description String
+}
+
+entity Unit {
+  measurement String
+  description String
+}
+
+entity Inventory {
+  inStock Integer
+  booked Integer
+  claim Integer
+}
+
+entity PartialObtain {
+
+}
+
+entity Product {
+  name String
+  description String
+
+}
+
+entity Category {
+  name String
+  description String
+}
+
+entity Balance {
+  amount Float
+  loan Float
+}
+
+entity TransactionHistory {
+  amount Float
+  description String
+  type TransactionType
+}
+
+enum TransactionType {
+	RECEIVER, SENDER
+}
+
+entity Currency {
+  name String
+  rate Float
+}
+
+entity Customer {
+  fullName String
+  companyName String
+  customerType CustomerType
+}
+
+enum CustomerType {
+  STAFF,
+  CLIENT,
+  PARTNER,
+  TECHNICIAN
+}
+
+relationship OneToMany {
+  Category to Category{parent}
+  Category to Product{category}
+  Customer to TransactionHistory{client}
+  Customer to Marketing{customer}
+  Customer to PartialObtain{customer}
+  Product to Marketing{product}
+  Inventory to PartialObtain{item}
+}
+
+relationship OneToOne {
+  Inventory{product} to Product
+  PartialObtain{unit} to Unit
+  Inventory{unit} to Unit
+  TransactionHistory{currency} to Currency
+  Balance{currency} to Currency
+  Product{stage} to ManufactureStage
+}
+
+
+// Set pagination options
+paginate * with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+
+

@@ -1,0 +1,9 @@
+{
+  "storeApp": {
+    "TransactionType": {
+      "null": "",
+      "RECEIVER": "RECEIVER",
+      "SENDER": "SENDER"
+    }
+  }
+}

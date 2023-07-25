@@ -1,0 +1,26 @@
+{
+  "storeApp": {
+    "partialObtain": {
+      "home": {
+        "title": "Partial Obtains",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Partial Obtain",
+        "createOrEditLabel": "Create or edit a Partial Obtain",
+        "notFound": "No Partial Obtains found"
+      },
+      "created": "A new Partial Obtain is created with identifier { param }",
+      "updated": "A Partial Obtain is updated with identifier { param }",
+      "deleted": "A Partial Obtain is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Partial Obtain { id }?"
+      },
+      "detail": {
+        "title": "Partial Obtain"
+      },
+      "id": "ID",
+      "unit": "Unit",
+      "customer": "Customer",
+      "item": "Item"
+    }
+  }
+}

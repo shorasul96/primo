@@ -1,0 +1,26 @@
+{
+  "storeApp": {
+    "manufactureStage": {
+      "home": {
+        "title": "Manufacture Stages",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Manufacture Stage",
+        "createOrEditLabel": "Создать или отредактировать Manufacture Stage",
+        "notFound": "Manufacture Stages не найдено"
+      },
+      "created": "Новый Manufacture Stage создан с идентификатором { param }",
+      "updated": "Manufacture Stage обновлен с идентификатором { param }",
+      "deleted": "Manufacture Stage удален с идентификатором { param }",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Manufacture Stage { id }?"
+      },
+      "detail": {
+        "title": "Manufacture Stage"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "product": "Product"
+    }
+  }
+}

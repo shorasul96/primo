@@ -1,0 +1,26 @@
+{
+  "storeApp": {
+    "manufactureStage": {
+      "home": {
+        "title": "Manufacture Stages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Manufacture Stage",
+        "createOrEditLabel": "Create or edit a Manufacture Stage",
+        "notFound": "No Manufacture Stages found"
+      },
+      "created": "A new Manufacture Stage is created with identifier { param }",
+      "updated": "A Manufacture Stage is updated with identifier { param }",
+      "deleted": "A Manufacture Stage is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Manufacture Stage { id }?"
+      },
+      "detail": {
+        "title": "Manufacture Stage"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "product": "Product"
+    }
+  }
+}

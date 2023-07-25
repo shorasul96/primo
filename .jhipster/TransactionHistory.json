@@ -1,0 +1,39 @@
+{
+  "applications": ["store"],
+  "changelogDate": "20230725133437",
+  "dto": "mapstruct",
+  "entityTableName": "transaction_history",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "TransactionType",
+      "fieldValues": "RECEIVER,SENDER"
+    }
+  ],
+  "name": "TransactionHistory",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "currency",
+      "relationshipName": "currency",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "customer",
+      "relationshipName": "client",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

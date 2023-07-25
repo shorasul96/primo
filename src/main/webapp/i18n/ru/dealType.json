@@ -1,0 +1,12 @@
+{
+  "storeApp": {
+    "DealType": {
+      "null": "",
+      "SALE": "SALE",
+      "TRADE": "TRADE",
+      "IMPORT": "IMPORT",
+      "EXPORT": "EXPORT",
+      "PREPAY": "PREPAY"
+    }
+  }
+}

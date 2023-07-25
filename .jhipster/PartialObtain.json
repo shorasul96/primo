@@ -1,0 +1,31 @@
+{
+  "applications": ["store"],
+  "changelogDate": "20230725133433",
+  "dto": "mapstruct",
+  "entityTableName": "partial_obtain",
+  "fields": [],
+  "name": "PartialObtain",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "unit",
+      "relationshipName": "unit",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "customer",
+      "relationshipName": "customer",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "inventory",
+      "relationshipName": "item",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

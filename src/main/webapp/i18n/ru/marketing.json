@@ -1,0 +1,26 @@
+{
+  "storeApp": {
+    "marketing": {
+      "home": {
+        "title": "Marketings",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Marketing",
+        "createOrEditLabel": "Создать или отредактировать Marketing",
+        "notFound": "Marketings не найдено"
+      },
+      "created": "Новый Marketing создан с идентификатором { param }",
+      "updated": "Marketing обновлен с идентификатором { param }",
+      "deleted": "Marketing удален с идентификатором { param }",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Marketing { id }?"
+      },
+      "detail": {
+        "title": "Marketing"
+      },
+      "id": "ID",
+      "deal": "Deal",
+      "customer": "Customer",
+      "product": "Product"
+    }
+  }
+}

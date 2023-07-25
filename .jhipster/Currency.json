@@ -1,0 +1,21 @@
+{
+  "applications": ["store"],
+  "changelogDate": "20230725133438",
+  "dto": "mapstruct",
+  "entityTableName": "currency",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rate",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "Currency",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

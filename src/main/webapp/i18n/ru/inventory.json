@@ -1,0 +1,29 @@
+{
+  "storeApp": {
+    "inventory": {
+      "home": {
+        "title": "Inventories",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Inventory",
+        "createOrEditLabel": "Создать или отредактировать Inventory",
+        "notFound": "Inventories не найдено"
+      },
+      "created": "Новый Inventory создан с идентификатором { param }",
+      "updated": "Inventory обновлен с идентификатором { param }",
+      "deleted": "Inventory удален с идентификатором { param }",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Inventory { id }?"
+      },
+      "detail": {
+        "title": "Inventory"
+      },
+      "id": "ID",
+      "inStock": "In Stock",
+      "booked": "Booked",
+      "claim": "Claim",
+      "product": "Product",
+      "unit": "Unit",
+      "partialObtain": "Partial Obtain"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "applications": ["store"],
+  "changelogDate": "20230725133429",
+  "dto": "mapstruct",
+  "entityTableName": "marketing",
+  "fields": [
+    {
+      "fieldName": "deal",
+      "fieldType": "DealType",
+      "fieldValues": "SALE,TRADE,IMPORT,EXPORT,PREPAY"
+    }
+  ],
+  "name": "Marketing",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "customer",
+      "relationshipName": "customer",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "product",
+      "relationshipName": "product",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

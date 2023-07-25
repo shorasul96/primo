@@ -1,0 +1,28 @@
+{
+  "storeApp": {
+    "transactionHistory": {
+      "home": {
+        "title": "Transaction Histories",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Transaction History",
+        "createOrEditLabel": "Создать или отредактировать Transaction History",
+        "notFound": "Transaction Histories не найдено"
+      },
+      "created": "Новый Transaction History создан с идентификатором { param }",
+      "updated": "Transaction History обновлен с идентификатором { param }",
+      "deleted": "Transaction History удален с идентификатором { param }",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Transaction History { id }?"
+      },
+      "detail": {
+        "title": "Transaction History"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "description": "Description",
+      "type": "Type",
+      "currency": "Currency",
+      "client": "Client"
+    }
+  }
+}

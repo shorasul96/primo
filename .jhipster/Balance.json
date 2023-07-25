@@ -1,0 +1,28 @@
+{
+  "applications": ["store"],
+  "changelogDate": "20230725133436",
+  "dto": "mapstruct",
+  "entityTableName": "balance",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "loan",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "Balance",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "currency",
+      "relationshipName": "currency",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,45 @@
+{
+  "applications": ["store"],
+  "changelogDate": "20230725133432",
+  "dto": "mapstruct",
+  "entityTableName": "inventory",
+  "fields": [
+    {
+      "fieldName": "inStock",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "booked",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "claim",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Inventory",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "product",
+      "relationshipName": "product",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "unit",
+      "relationshipName": "unit",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "partialObtain",
+      "otherEntityRelationshipName": "item",
+      "relationshipName": "partialObtain",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity PartialObtain.
+    -->
+    <changeSet id="20230725133433-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="unit_id"
+                                 baseTableName="partial_obtain"
+                                 constraintName="fk_partial_obtain__unit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="unit"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="customer_id"
+                                 baseTableName="partial_obtain"
+                                 constraintName="fk_partial_obtain__customer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="customer"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="item_id"
+                                 baseTableName="partial_obtain"
+                                 constraintName="fk_partial_obtain__item_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="inventory"
+                                 />
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,28 @@
+{
+  "storeApp": {
+    "transactionHistory": {
+      "home": {
+        "title": "Transaction Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Transaction History",
+        "createOrEditLabel": "Create or edit a Transaction History",
+        "notFound": "No Transaction Histories found"
+      },
+      "created": "A new Transaction History is created with identifier { param }",
+      "updated": "A Transaction History is updated with identifier { param }",
+      "deleted": "A Transaction History is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Transaction History { id }?"
+      },
+      "detail": {
+        "title": "Transaction History"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "description": "Description",
+      "type": "Type",
+      "currency": "Currency",
+      "client": "Client"
+    }
+  }
+}

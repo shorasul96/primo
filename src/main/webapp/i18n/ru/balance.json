@@ -1,0 +1,26 @@
+{
+  "storeApp": {
+    "balance": {
+      "home": {
+        "title": "Balances",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Balance",
+        "createOrEditLabel": "Создать или отредактировать Balance",
+        "notFound": "Balances не найдено"
+      },
+      "created": "Новый Balance создан с идентификатором { param }",
+      "updated": "Balance обновлен с идентификатором { param }",
+      "deleted": "Balance удален с идентификатором { param }",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Balance { id }?"
+      },
+      "detail": {
+        "title": "Balance"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "loan": "Loan",
+      "currency": "Currency"
+    }
+  }
+}

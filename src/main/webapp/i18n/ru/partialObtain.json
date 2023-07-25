@@ -1,0 +1,26 @@
+{
+  "storeApp": {
+    "partialObtain": {
+      "home": {
+        "title": "Partial Obtains",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Partial Obtain",
+        "createOrEditLabel": "Создать или отредактировать Partial Obtain",
+        "notFound": "Partial Obtains не найдено"
+      },
+      "created": "Новый Partial Obtain создан с идентификатором { param }",
+      "updated": "Partial Obtain обновлен с идентификатором { param }",
+      "deleted": "Partial Obtain удален с идентификатором { param }",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Partial Obtain { id }?"
+      },
+      "detail": {
+        "title": "Partial Obtain"
+      },
+      "id": "ID",
+      "unit": "Unit",
+      "customer": "Customer",
+      "item": "Item"
+    }
+  }
+}

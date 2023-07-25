@@ -1,0 +1,48 @@
+{
+  "applications": ["store"],
+  "changelogDate": "20230725133439",
+  "dto": "mapstruct",
+  "entityTableName": "customer",
+  "fields": [
+    {
+      "fieldName": "fullName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerType",
+      "fieldType": "CustomerType",
+      "fieldValues": "STAFF,CLIENT,PARTNER,TECHNICIAN"
+    }
+  ],
+  "name": "Customer",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "transactionHistory",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "transactionHistory",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "marketing",
+      "otherEntityRelationshipName": "customer",
+      "relationshipName": "marketing",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "partialObtain",
+      "otherEntityRelationshipName": "customer",
+      "relationshipName": "partialObtain",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
