@@ -23,11 +23,14 @@ public interface PartialObtainMapper extends EntityMapper<PartialObtainDTO, Part
     @Named("unitId")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "measurement", source = "measurement")
     UnitDTO toDtoUnitId(Unit unit);
 
     @Named("customerId")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "fullName", source = "fullName")
+    @Mapping(target = "companyName", source = "companyName")
     CustomerDTO toDtoCustomerId(Customer customer);
 
     @Named("inventoryId")

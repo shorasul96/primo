@@ -56,14 +56,14 @@
             <td>
               <div v-if="marketing.customer">
                 <router-link :to="{ name: 'CustomerView', params: { customerId: marketing.customer.id } }">{{
-                  marketing.customer.id
+                  marketing.customer.fullName + ' ' + marketing.customer.companyName
                 }}</router-link>
               </div>
             </td>
             <td>
               <div v-if="marketing.product">
                 <router-link :to="{ name: 'ProductView', params: { productId: marketing.product.id } }">{{
-                  marketing.product.id
+                  marketing.product.name
                 }}</router-link>
               </div>
             </td>

@@ -45,7 +45,7 @@
                 v-for="currencyOption in currencies"
                 :key="currencyOption.id"
               >
-                {{ currencyOption.id }}
+                {{ currencyOption.name }}
               </option>
             </select>
           </div>

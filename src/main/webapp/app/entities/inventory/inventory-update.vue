@@ -57,7 +57,7 @@
                 v-for="productOption in products"
                 :key="productOption.id"
               >
-                {{ productOption.id }}
+                {{ productOption.name }}
               </option>
             </select>
           </div>
@@ -70,7 +70,7 @@
                 v-for="unitOption in units"
                 :key="unitOption.id"
               >
-                {{ unitOption.id }}
+                {{ unitOption.measurement }}
               </option>
             </select>
           </div>

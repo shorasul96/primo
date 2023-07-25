@@ -41,7 +41,7 @@
                 v-for="customerOption in customers"
                 :key="customerOption.id"
               >
-                {{ customerOption.id }}
+                {{ customerOption.fullName + ' ' + customerOption.companyName }}
               </option>
             </select>
           </div>
@@ -54,7 +54,7 @@
                 v-for="productOption in products"
                 :key="productOption.id"
               >
-                {{ productOption.id }}
+                {{ productOption.name }}
               </option>
             </select>
           </div>

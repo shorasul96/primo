@@ -30,7 +30,7 @@
           <dd>
             <div v-if="inventory.product">
               <router-link :to="{ name: 'ProductView', params: { productId: inventory.product.id } }">{{
-                inventory.product.id
+                inventory.product.name
               }}</router-link>
             </div>
           </dd>
@@ -39,7 +39,7 @@
           </dt>
           <dd>
             <div v-if="inventory.unit">
-              <router-link :to="{ name: 'UnitView', params: { unitId: inventory.unit.id } }">{{ inventory.unit.id }}</router-link>
+              <router-link :to="{ name: 'UnitView', params: { unitId: inventory.unit.id } }">{{ inventory.unit.measurement }}</router-link>
             </div>
           </dd>
         </dl>

@@ -20,10 +20,13 @@ public interface MarketingMapper extends EntityMapper<MarketingDTO, Marketing> {
     @Named("customerId")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "fullName", source = "fullName")
+    @Mapping(target = "companyName", source = "companyName")
     CustomerDTO toDtoCustomerId(Customer customer);
 
     @Named("productId")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "name", source = "name")
     ProductDTO toDtoProductId(Product product);
 }

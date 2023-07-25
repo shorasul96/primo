@@ -11,7 +11,7 @@
           </dt>
           <dd>
             <div v-if="partialObtain.unit">
-              <router-link :to="{ name: 'UnitView', params: { unitId: partialObtain.unit.id } }">{{ partialObtain.unit.id }}</router-link>
+              <router-link :to="{ name: 'UnitView', params: { unitId: partialObtain.unit.id } }">{{ partialObtain.unit.measurement }}</router-link>
             </div>
           </dd>
           <dt>
@@ -20,7 +20,7 @@
           <dd>
             <div v-if="partialObtain.customer">
               <router-link :to="{ name: 'CustomerView', params: { customerId: partialObtain.customer.id } }">{{
-                partialObtain.customer.id
+                partialObtain.customer.fullName + ' ' + partialObtain.customer.companyName
               }}</router-link>
             </div>
           </dd>

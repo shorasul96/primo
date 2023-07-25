@@ -57,7 +57,7 @@
             <td>
               <div v-if="balance.currency">
                 <router-link :to="{ name: 'CurrencyView', params: { currencyId: balance.currency.id } }">{{
-                  balance.currency.id
+                  balance.currency.name
                 }}</router-link>
               </div>
             </td>

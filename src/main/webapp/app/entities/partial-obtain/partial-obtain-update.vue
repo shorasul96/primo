@@ -21,7 +21,7 @@
                 v-for="unitOption in units"
                 :key="unitOption.id"
               >
-                {{ unitOption.id }}
+                {{ unitOption.measurement }}
               </option>
             </select>
           </div>
@@ -36,7 +36,7 @@
                 v-for="customerOption in customers"
                 :key="customerOption.id"
               >
-                {{ customerOption.id }}
+                {{ customerOption.fullName + ' ' + customerOption.companyName }}
               </option>
             </select>
           </div>

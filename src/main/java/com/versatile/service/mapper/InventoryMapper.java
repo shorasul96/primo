@@ -20,10 +20,12 @@ public interface InventoryMapper extends EntityMapper<InventoryDTO, Inventory> {
     @Named("productId")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "name", source = "name")
     ProductDTO toDtoProductId(Product product);
 
     @Named("unitId")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "measurement", source = "measurement")
     UnitDTO toDtoUnitId(Unit unit);
 }

@@ -17,5 +17,6 @@ public interface BalanceMapper extends EntityMapper<BalanceDTO, Balance> {
     @Named("currencyId")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "name", source = "name")
     CurrencyDTO toDtoCurrencyId(Currency currency);
 }
